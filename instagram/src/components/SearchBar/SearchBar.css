@@ -1,0 +1,15 @@
+.search-bar-wrapper {
+  height: 80px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.social-wrapper {
+  display: flex;
+}
+
+.social {
+  width: 30px;
+}
