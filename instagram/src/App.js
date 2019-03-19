@@ -17,7 +17,10 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar />
-        <PostsContainer posts={this.state.posts} />
+        <PostsContainer
+          likes={this.state.posts.likes}
+          posts={this.state.posts}
+        />
       </div>
     );
   }

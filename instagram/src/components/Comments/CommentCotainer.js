@@ -7,10 +7,18 @@ class CommentContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comments: props.comments,
-      commentText: ""
+      comments: [],
+      commentText: "",
+      likes: 0
     };
   }
+
+  componentDidMount = () => {
+    this.setState({
+      comments: this.props.comments,
+      likes: this.props.likes
+    });
+  };
 
   addNewComment = (e, index) => {
     e.preventDefault();
@@ -18,9 +26,24 @@ class CommentContainer extends React.Component {
 
     this.setState(prevState => {
       return {
+        active: false,
         comments: [...prevState.comments, newComment],
         commentText: ""
       };
+    });
+  };
+
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
+
+  likePost = e => {
+    console.log("liked");
+    const currentState = this.state.active;
+    this.setState({
+      likes: this.state.likes + 1,
+      active: !currentState
     });
   };
 
@@ -34,7 +57,12 @@ class CommentContainer extends React.Component {
         <div className="comment-header">
           <div className="social-wrapper">
             <div className="social">
-              <i className="far fa-heart" />
+              <i
+                onClick={this.likePost}
+                className={
+                  this.state.active ? "far fa-heart red-bg" : "far fa-heart"
+                }
+              />
             </div>
             <div className="social">
               <i className="far fa-comment" />
