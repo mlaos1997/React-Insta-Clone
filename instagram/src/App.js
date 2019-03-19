@@ -5,12 +5,14 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import PostsContainer from "./components/PostsContainer/PostsContainer";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      posts: dummyData
-    };
-  }
+  state = {
+    posts: []
+  };
+
+  componentDidMount = () => {
+    this.setState({ posts: dummyData });
+  };
+
   render() {
     return (
       <div className="App">

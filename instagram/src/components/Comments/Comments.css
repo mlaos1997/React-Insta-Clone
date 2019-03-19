@@ -16,5 +16,17 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 0 0 6px;
-  border: 1px solid red;
+}
+
+.comment {
+  padding: 0;
+  margin: 0 0;
+}
+
+.commentInput {
+  margin-top: 14px;
+  border: none;
+  border-top: 1px solid lightgray;
+  padding: 6px;
+  width: 534px;
 }

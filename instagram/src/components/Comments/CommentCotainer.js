@@ -23,9 +23,9 @@ const CommentContainer = props => {
         {props.comments.map(comment => (
           <Comment comment={comment} />
         ))}
-      </div>
-      <div className="input">
-        <CommentInput />
+        <div className="input">
+          <CommentInput />
+        </div>
       </div>
     </div>
   );
