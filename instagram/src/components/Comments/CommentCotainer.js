@@ -60,7 +60,7 @@ class CommentContainer extends React.Component {
               <i
                 onClick={this.likePost}
                 className={
-                  this.state.active ? "far fa-heart red-bg" : "far fa-heart"
+                  this.state.active ? "fas fa-heart red-bg" : "far fa-heart"
                 }
               />
             </div>
