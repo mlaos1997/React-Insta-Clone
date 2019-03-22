@@ -1,6 +1,6 @@
-import React from "react";
-import "./SearchBar.css";
-import { Button } from "reactstrap";
+import React from 'react';
+import './SearchBar.css';
+import { Button } from 'reactstrap';
 
 const SearchBar = props => {
   return (
@@ -11,17 +11,22 @@ const SearchBar = props => {
         </div>
       </div>
       <div className="input-wrapper">
-        <input onKeyDown={props.filterPosts} type="text" placeholder="Search" />
+        <input
+          className="search-input"
+          onKeyDown={props.filterPosts}
+          type="text"
+          placeholder="Search"
+        />
       </div>
       <div className="social-wrapper">
         <div className="social">
-          <i className="fa fa-compass" />
+          <i className="far fa-compass" />
         </div>
         <div className="social">
-          <i className="fa fa-heart" />
+          <i className="far fa-heart" />
         </div>
         <div className="social">
-          <i className="fa fa-user-circle" />
+          <i className="far fa-user-circle" />
         </div>
       </div>
     </div>

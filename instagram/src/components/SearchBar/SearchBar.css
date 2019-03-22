@@ -2,7 +2,7 @@
   height: 45px;
   line-height: 70px;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dcddde;
   justify-content: space-between;
   align-items: baseline;
   background: white;
@@ -17,6 +17,12 @@
   margin: auto;
 }
 
+.search-input {
+  border: 1px solid #dcddde;
+  border-radius: 1px;
+  background: #e0e3e7;
+}
+
 .social-wrapper {
   display: flex;
 }
@@ -29,14 +35,14 @@
   font-size: 30px;
 }
 
-.fa.fa-compass {
+.far.fa-compass {
   font-size: 30px;
 }
 
-.fa.fa-heart {
+.far.fa-heart {
   font-size: 30px;
 }
 
-.fa.fa-user-circle {
+.far.fa-user-circle {
   font-size: 30px;
 }
