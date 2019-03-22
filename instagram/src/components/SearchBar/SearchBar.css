@@ -1,9 +1,20 @@
 .search-bar-wrapper {
-  height: 80px;
+  height: 45px;
   line-height: 70px;
   display: flex;
+  border-bottom: 1px solid black;
   justify-content: space-between;
+  align-items: baseline;
   background: white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin: auto;
 }
 
 .social-wrapper {
@@ -12,4 +23,20 @@
 
 .social {
   width: 30px;
+}
+
+.fab.fa-instagram {
+  font-size: 30px;
+}
+
+.fa.fa-compass {
+  font-size: 30px;
+}
+
+.fa.fa-heart {
+  font-size: 30px;
+}
+
+.fa.fa-user-circle {
+  font-size: 30px;
 }

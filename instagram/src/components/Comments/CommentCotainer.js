@@ -41,6 +41,7 @@ class CommentContainer extends React.Component {
   likePost = e => {
     console.log("liked");
     const currentState = this.state.active;
+
     this.setState({
       likes: this.state.likes + 1,
       active: !currentState

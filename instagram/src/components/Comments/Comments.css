@@ -1,5 +1,6 @@
 .social {
   width: 30px;
+  padding-left: 6px;
 }
 
 .social-wrapper {
@@ -28,7 +29,7 @@
   border: none;
   border-top: 1px solid lightgray;
   padding: 6px;
-  width: 534px;
+  width: 100%;
 }
 
 .red-bg {

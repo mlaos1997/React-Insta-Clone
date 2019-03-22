@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.css";
+import { Button } from "reactstrap";
 
 const SearchBar = props => {
   return (
@@ -9,7 +10,7 @@ const SearchBar = props => {
           <i className="fab fa-instagram" />
         </div>
       </div>
-      <div>
+      <div className="input-wrapper">
         <input onKeyDown={props.filterPosts} type="text" placeholder="Search" />
       </div>
       <div className="social-wrapper">

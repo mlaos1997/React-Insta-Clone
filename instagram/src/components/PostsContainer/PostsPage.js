@@ -4,6 +4,8 @@ import PostsContainer from "./PostsContainer";
 import SearchBar from "../SearchBar/SearchBar";
 
 class PostsPage extends React.Component {
+  //First lets create object that holds our users
+
   state = {
     posts: [],
     filteredPosts: []
